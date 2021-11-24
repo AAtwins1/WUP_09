@@ -138,8 +138,36 @@ summary.lm(model.1)
 Height and Width are both good variables to compare weight to as the Adjusted R-squared is around .9. The equation for the fist inferential test is Weight=116.965*Height-537.328.
 The equation for the second inferential test is Weight= 188.819*Width-513.845.
 
+# Inferential Results for Pike
+```{r}
+model.1 <- lm(Weight~Height,data=pike)
+summary.lm(model.1)
+```
+
+```{r}
+model.1 <- lm(Weight~Width,data=pike)
+summary.lm(model.1)
+```
+
+Height and Width are both good variables to compare weight to as the Adjusted R-squared is around .8 which is pretty high. The equation for the fist inferential test is Weight=278.06*Height-1426.16.
+The equation for the second inferential test is Weight= 398.57*Width-398.57.
+
+# Inferential Results for Roach
+```{r}
+model.1 <- lm(Weight~Height,data=roach)
+summary.lm(model.1)
+```
+
+```{r}
+model.1 <- lm(Weight~Width,data=roach)
+summary.lm(model.1)
+```
+
+Width is a better variable to compare weight to because the Adjusted R-squared is around .8 which is a bit higher than the adjusted r-squared for height. The equation for the fist inferential test is Weight=62.827*Height-268.566.
+The equation for the second inferential test is Weight= 118.93*Width-282.96.
+
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-In this problem we first filtered out the Species data because it was not needed in this problem and then we select the perch data out of mydata. Then we figured out what helper file we need to use which was a numerical~numerical.rmd file according to the data given. Then we ran numerical and inferential results to predict the weight of perch. We figured out that weight increases as Width and Height increases. 
+In this problem we first filtered out the Species data because it was not needed in this problem and then we select the perch, pike, and roach data out of mydata. Then we figured out what helper file we need to use which was a numerical~numerical.rmd file according to the data given. After, we ran numerical and inferential results to predict the weight of perch, pike, and roach. We figured out that weight increases as Width and Height increases for all three fish. 
