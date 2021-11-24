@@ -56,6 +56,32 @@ basicNN + geom_point()
 
 Each plot shows an increasing correlation. In the first plot, the relationship between Height and Weight has an increasing correlation as well as the plot with Width and Weight. 
 
+# Graphical Descriptive Results for Pike
+
+```{r}
+plot(Weight~Height,data=pike)
+basicNN <- ggplot(pike,aes(y=Weight,x=Height))
+basicNN + geom_point()
+plot(Weight~Width, data=pike)
+basicNN <- ggplot(pike,aes(y=Weight,x=Width))
+basicNN + geom_point()
+```
+
+When compared to height and width, weight has a positive correlation as shown in all four plots.
+
+# Graphical Descritpive Results for Roach 
+
+```{r}
+plot(Weight~Height,data=roach)
+basicNN <- ggplot(roach,aes(y=Weight,x=Height))
+basicNN + geom_point()
+plot(Weight~Width, data=roach)
+basicNN <- ggplot(roach,aes(y=Weight,x=Width))
+basicNN + geom_point()
+```
+
+All plots show a positive correlation for weight. 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
