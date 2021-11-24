@@ -33,7 +33,7 @@ roach <- select(roach, -Species)
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
-After running the data and choosing the perch data to look at, we figured out that we need to upload the Numerical~Numerical helper file.
+After running the data and choosing the perch,pike,and roach data to look at, we figured out that we need to upload the Numerical~Numerical helper file.
 
 # Results
 
