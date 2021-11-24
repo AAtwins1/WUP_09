@@ -97,6 +97,32 @@ cor(Weight~Width,data=perch)
 ```
 The correlation between Weight and Width is about 1.0. 
 
+# Numerical Results for Pike
+
+```{r}
+cor(Weight~Height,data=pike)
+```
+The correlation between Weight and Height for pike is a bout 0.94.
+
+```{r}
+cor(Weight~Width,data=pike)
+```
+
+The correlation between Weight and Width for pike is about 0.92.
+ 
+# Numerical Results for Roach
+
+```{r}
+cor(Weight~Height,data=roach)
+```
+
+The correlation is about .89 which is a bit lower that the correlation between Weight and Width. 
+
+```{r}
+cor(Weight~Width,data=roach)
+```
+The correlation between Weight and Width is 0.92.
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
