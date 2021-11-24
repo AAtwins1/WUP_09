@@ -29,6 +29,7 @@ perch <- select(perch, -Species)
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method.!-->
+After running the data and choosing the perch data to look at, we figured out that we need to upload the Numerical~Numerical helper file.
 
 #Results
 
@@ -40,9 +41,19 @@ perch <- select(perch, -Species)
 
 <!--Graphical results here.  Make sure to show your code.  Provide appropriate labels for axes, giving units if possible, and provide a good title for the graph, too.  Use the graphical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+plot(Weight~Height,data=perch)
+basicNN <- ggplot(perch,aes(y=Weight,x=Height))
+plot(Weight~Width, data=perch)
+basicNN <- ggplot(perch,aes(y=Weight,x=Width))
+```
+
+Each plot shows an increasing correlation. In the first plot, the observation between Height and Weight has an increasing correlation as well as the plot with Width and Weight. 
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+
 
 ## Inferential Results
 
