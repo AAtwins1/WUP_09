@@ -16,6 +16,10 @@ library(leaps)
 mydata <- read.csv(file="Fish.csv")
 perch <- filter(mydata, Species == "Perch")
 perch <- select(perch, -Species)
+pike <- filter(mydata, Species =="Pike")
+pike <- select (pike, -Species)
+roach <- filter(mydata, Species =="Roach")
+roach <- select(roach, -Species)
 ```
 
 # Introduction
